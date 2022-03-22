@@ -1,0 +1,11 @@
+body {
+    font-family: sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: darkolivegreen;
+}
+
+.app-header .app-header--title{
+    color:  seagreen;
+    font-weight: bold;
+}

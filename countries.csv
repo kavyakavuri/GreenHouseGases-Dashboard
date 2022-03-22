@@ -1,0 +1,218 @@
+,CountryCode,CountryName
+7434,AFG,Afghanistan
+7603,ALB,Albania
+7705,DZA,Algeria
+7901,ASM,American Samoa
+7921,AND,Andorra
+7929,AGO,Angola
+8063,ATG,Antigua and Barbuda
+8169,ARG,Argentina
+8383,ARM,Armenia
+8464,ABW,Aruba
+8556,AUS,Australia
+8808,AUT,Austria
+8989,AZE,Azerbaijan
+9070,BHS,"Bahamas, The"
+9191,BHR,Bahrain
+9301,BGD,Bangladesh
+9485,BRB,Barbados
+9593,BLR,Belarus
+9676,BEL,Belgium
+9832,BLZ,Belize
+9962,BEN,Benin
+10170,BMU,Bermuda
+10209,BTN,Bhutan
+10293,BOL,Bolivia
+10496,BIH,Bosnia and Herzegovina
+10575,BWA,Botswana
+10745,BRA,Brazil
+10988,VGB,British Virgin Islands
+11009,BRN,Brunei Darussalam
+11134,BGR,Bulgaria
+11241,BFA,Burkina Faso
+11427,BDI,Burundi
+11582,CPV,Cabo Verde
+11689,KHM,Cambodia
+11860,CMR,Cameroon
+12033,CAN,Canada
+12259,CYM,Cayman Islands
+12285,CAF,Central African Republic
+12470,TCD,Chad
+12675,CHI,Channel Islands
+12755,CHL,Chile
+13018,CHN,China
+13177,COL,Colombia
+13403,COM,Comoros
+13497,COD,"Congo, Dem. Rep."
+13627,COG,"Congo, Rep."
+13844,CRI,Costa Rica
+14090,CIV,Cote d'Ivoire
+14286,HRV,Croatia
+14365,CUB,Cuba
+14485,CUW,Curacao
+14554,CYP,Cyprus
+14689,CZE,Czech Republic
+14770,DNK,Denmark
+14953,DJI,Djibouti
+15048,DMA,Dominica
+15082,DOM,Dominican Republic
+15320,ECU,Ecuador
+15577,EGY,"Egypt, Arab Rep."
+15801,SLV,El Salvador
+15940,GNQ,Equatorial Guinea
+16036,ERI,Eritrea
+16117,EST,Estonia
+16197,SWZ,Eswatini
+16361,ETH,Ethiopia
+16503,FRO,Faroe Islands
+16533,FJI,Fiji
+16684,FIN,Finland
+16866,FRA,France
+17132,PYF,French Polynesia
+17229,GAB,Gabon
+17420,GMB,"Gambia, The"
+17531,GEO,Georgia
+17612,DEU,Germany
+17759,GHA,Ghana
+17975,GIB,Gibraltar
+18004,GRC,Greece
+18243,GRL,Greenland
+18272,GRD,Grenada
+18381,GUM,Guam
+18471,GTM,Guatemala
+18706,GIN,Guinea
+18831,GNB,Guinea-Bissau
+18929,GUY,Guyana
+19155,HTI,Haiti
+19316,HND,Honduras
+19563,HKG,"Hong Kong SAR, China"
+19737,HUN,Hungary
+19875,ISL,Iceland
+20051,IND,India
+20328,IDN,Indonesia
+20540,IRN,"Iran, Islamic Rep."
+20781,IRQ,Iraq
+20945,IRL,Ireland
+21111,IMN,Isle of Man
+21124,ISR,Israel
+21343,ITA,Italy
+21526,JAM,Jamaica
+21713,JPN,Japan
+21917,JOR,Jordan
+22069,KAZ,Kazakhstan
+22150,KEN,Kenya
+22366,KIR,Kiribati
+22460,PRK,"Korea, Dem. People’s Rep."
+22554,KOR,"Korea, Rep."
+22819,XKX,Kosovo
+22820,KWT,Kuwait
+22935,KGZ,Kyrgyz Republic
+23016,LAO,Lao PDR
+23139,LVA,Latvia
+23218,LBN,Lebanon
+23361,LSO,Lesotho
+23541,LBR,Liberia
+23657,LBY,Libya
+23802,LIE,Liechtenstein
+23817,LTU,Lithuania
+23898,LUX,Luxembourg
+24045,MAC,"Macao SAR, China"
+24157,MDG,Madagascar
+24363,MWI,Malawi
+24527,MYS,Malaysia
+24759,MDV,Maldives
+24853,MLI,Mali
+24962,MLT,Malta
+25096,MHL,Marshall Islands
+25114,MRT,Mauritania
+25235,MUS,Mauritius
+25373,MEX,Mexico
+25621,FSM,"Micronesia, Fed. Sts."
+25702,MDA,Moldova
+25783,MCO,Monaco
+25793,MNG,Mongolia
+25886,MNE,Montenegro
+25961,MAR,Morocco
+26188,MOZ,Mozambique
+26311,MMR,Myanmar
+26467,NAM,Namibia
+26555,NRU,Nauru
+26567,NPL,Nepal
+26722,NLD,Netherlands
+26909,NCL,New Caledonia
+27007,NZL,New Zealand
+27175,NIC,Nicaragua
+27387,NER,Niger
+27575,NGA,Nigeria
+27746,MKD,North Macedonia
+27825,MNP,Northern Mariana Islands
+27843,NOR,Norway
+28038,OMN,Oman
+28142,PAK,Pakistan
+28404,PLW,Palau
+28421,PAN,Panama
+28657,PNG,Papua New Guinea
+28801,PRY,Paraguay
+28952,PER,Peru
+29214,PHL,Philippines
+29477,POL,Poland
+29621,PRT,Portugal
+29803,PRI,Puerto Rico
+29947,QAT,Qatar
+30041,ROU,Romania
+30176,RUS,Russian Federation
+30267,RWA,Rwanda
+30448,WSM,Samoa
+30550,SMR,San Marino
+30556,STP,Sao Tome and Principe
+30657,SAU,Saudi Arabia
+30776,SEN,Senegal
+30975,SRB,Serbia
+31046,SYC,Seychelles
+31166,SLE,Sierra Leone
+31319,SGP,Singapore
+31571,SXM,Sint Maarten (Dutch part)
+31573,SVK,Slovak Republic
+31654,SVN,Slovenia
+31729,SLB,Solomon Islands
+31838,SOM,Somalia
+32039,ZAF,South Africa
+32322,SSD,South Sudan
+32399,ESP,Spain
+32573,LKA,Sri Lanka
+32820,KNA,St. Kitts and Nevis
+32854,LCA,St. Lucia
+32956,MAF,St. Martin (French part)
+32957,VCT,St. Vincent and the Grenadines
+33079,SDN,Sudan
+33321,SUR,Suriname
+33475,SWE,Sweden
+33717,CHE,Switzerland
+33906,SYR,Syrian Arab Republic
+34117,TJK,Tajikistan
+34196,TZA,Tanzania
+34334,THA,Thailand
+34591,TLS,Timor-Leste
+34668,TGO,Togo
+34881,TON,Tonga
+34984,TTO,Trinidad and Tobago
+35138,TUN,Tunisia
+35283,TUR,Turkey
+35533,TKM,Turkmenistan
+35612,TCA,Turks and Caicos Islands
+35629,TUV,Tuvalu
+35639,UGA,Uganda
+35836,UKR,Ukraine
+35919,ARE,United Arab Emirates
+36026,GBR,United Kingdom
+36226,USA,United States
+36441,URY,Uruguay
+36663,UZB,Uzbekistan
+36746,VUT,Vanuatu
+36849,VEN,"Venezuela, RB"
+37077,VNM,Vietnam
+37209,VIR,Virgin Islands (U.S.)
+37294,PSE,West Bank and Gaza
+37346,YEM,"Yemen, Rep."
+37455,ZMB,Zambia
+37592,ZWE,Zimbabwe
