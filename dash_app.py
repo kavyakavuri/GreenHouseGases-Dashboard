@@ -2,8 +2,9 @@ from dash import Dash, dcc, html, Input, Output
 import plotly.express as px
 import pandas as pd
 from raceplotly.plots import barplot
+import dash_bootstrap_components as dbc
 
-app = Dash(__name__)
+app = Dash(__name__)#,external_stylesheets=[dbc.themes.BOOTSTRAP]
 
 ## Read data
 
@@ -47,8 +48,8 @@ app.layout = html.Div([
         ]
     ),
     html.Div([
-        html.H1('GHG Emissions around the world'),
-        dcc.Dropdown(id="slct_gas",
+        dbc.Row(dbc.Col(html.H1('GHG Emissions around the world'))),
+        dbc.Row(dbc.Col(dcc.Dropdown(id="slct_gas",
                      options=[
                          {"label": 'Carbon dioxide(CO2)', "value": 'Carbon dioxide(CO2)'},
                          {"label": 'Nitrous oxide(N2O)', "value": 'Nitrous oxide(N2O)'},
@@ -58,21 +59,37 @@ app.layout = html.Div([
                      value='GHG',
                      # style={'width': "60%"}
                      ),
+                    width={'size': 6, 'offset': 3},
+                ),
+        ),
         dcc.Graph(id="choropleth_graph",figure={}),
         dcc.RangeSlider(1960, 2016, 4, 
             id='year_range_slider',
             marks=get_marks(),
             value=[1990, 2014],  
             tooltip={"placement": "bottom", "always_visible": True}),
+        html.Br(),
         html.H1('Yearly Emissions (Thousand Metric Ton CO2eq)'),
-        dcc.Dropdown(id="slct_country",
-                     options=get_countries_options(),
-                     multi=True,
-                     value='USA',
-                     ),
-        dcc.Graph(id="country_line_chart",figure={}),
-        html.H2("Sector Wise Emissions"),
-        dcc.Graph(id="sunburst_chart",figure={}),
+        dbc.Row(
+            [  
+                dbc.Col(dcc.Dropdown(id="slct_country",
+                             options=get_countries_options(),
+                             multi=True,
+                             value='USA',
+                             ),
+                        width={'size':6},
+                ),
+                dbc.Col(html.H2("Sector Wise Emissions"), width={'size':5,'offset':1}),
+            ],
+        ),
+        dbc.Row(
+            [
+                dbc.Col(dcc.Graph(id="country_line_chart",figure={}),width=6),
+                dbc.Col(dcc.Graph(id="sunburst_chart",figure={}),width=6),
+            ],
+        ),
+        html.Br(),
+        html.H1("Racing Bar graph of Top 10 Countries"),
         dcc.Graph(id="raceplot",figure=display_raceplot()),
     ])
 ])
