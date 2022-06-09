@@ -7,6 +7,7 @@ import dash_bootstrap_components as dbc
 from plotly.subplots import make_subplots
 import numpy as np
 import dash_daq as daq
+import boto3
 
 
 external_stylesheets = [
@@ -22,9 +23,37 @@ server = app.server
 
 ## READ DATA
 
-df_final = pd.read_csv("./df_final.csv")
+df_final = ""
+df_countries = ""
 
-df_countries = pd.read_csv("./countries.csv")
+client = boto3.client('s3',aws_access_key_id='AKIA5IRMWZIFSNNNLFPM',aws_secret_access_key='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')
+response = client.get_object(Bucket='ghg-data-bucket', Key='df_final.csv')
+status = response.get("ResponseMetadata", {}).get("HTTPStatusCode")
+
+
+if status == 200:
+    # print(f"Successful S3 get_object response. Status - {status}")
+    df_final = pd.read_csv(response.get("Body"))
+    # print(df)
+    print("reading done-df")
+else:
+    print(f"Unsuccessful S3 get_object response. Status - {status}")
+
+response = client.get_object(Bucket='ghg-data-bucket', Key='countries.csv')
+status = response.get("ResponseMetadata", {}).get("HTTPStatusCode")
+
+if status == 200:
+    # print(f"Successful S3 get_object response. Status - {status}")
+    df_countries = pd.read_csv(response.get("Body"))
+    # print(df)
+    print("reading done-countries")
+else:
+    print(f"Unsuccessful S3 get_object response. Status - {status}")
+
+
+# df_final = pd.read_csv("./df_final.csv")
+
+# df_countries = pd.read_csv("./countries.csv")
 
 #TODO: Make this Dynamic
 top_10_polluters = ['United States', 'China', 'Russian Federation', 'India', 'Japan', 'United Kingdom', 'Canada', 'Brazil', 'Germany', 'France']
