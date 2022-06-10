@@ -16,7 +16,7 @@ external_stylesheets = [
 ]
 
 
-# app = Dash(__name__,external_stylesheets=external_stylesheets)
+app = Dash(__name__,external_stylesheets=external_stylesheets)
 
 server = app.server
 
@@ -515,4 +515,4 @@ def calculate_carbon_footprint(n_clicks,electricity_bill,gas_bill,oil_bill,milea
         return "your carbon footprint is: "+str(cp) + " pounds per year",indicator
     return "Enter your values and press the button!",20000
 
-app.run_server(debug=True)
+# app.run_server(debug=True)
