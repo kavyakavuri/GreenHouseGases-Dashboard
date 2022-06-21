@@ -8,6 +8,7 @@ from plotly.subplots import make_subplots
 import numpy as np
 import dash_daq as daq
 import boto3
+import os
 
 
 external_stylesheets = [
@@ -25,8 +26,9 @@ server = app.server
 
 df_final = ""
 df_countries = ""
-
-client = boto3.client('s3',aws_access_key_id='AKIA5IRMWZIFSNNNLFPM',aws_secret_access_key='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')
+AWS_KEY = os.environ['AWS_ACCESS_KEY']
+AWS_SECRET_KEY = os.environ['AWS_SECRET_KEY']
+client = boto3.client('s3',aws_access_key_id=AWS_KEY,aws_secret_access_key=AWS_SECRET_KEY)
 response = client.get_object(Bucket='ghg-data-bucket', Key='df_final.csv')
 status = response.get("ResponseMetadata", {}).get("HTTPStatusCode")
 
